@@ -1,0 +1,58 @@
+.home{
+	width:94.67%;
+	height: 639px;
+	float: right;
+	background-color: black;
+	border:1px solid black;
+	margin-top: 30px;
+}
+.home h1{
+	font-size: 45px;
+	color: white;
+	text-align: center;
+	margin-top: 30px;
+	font-weight:500;
+	font-family: oxygen;
+
+}
+.img{
+	float: right;
+}
+.disc{
+	float: left;
+	width:50%;
+	height:400px;
+	margin-top:60px;
+}
+.disc p{
+	font-size: 20px;
+	color: white;
+	margin-left: 25px;
+	font-weight: 100;
+}
+.info{
+	width:94.67%;
+	height: 639px;
+	float: right;
+	margin-top: 50px;
+}
+.info h1{
+	font-size: 50px;
+	margin-top: 80px;
+	margin-left: 25px;
+	font-family: oxygen;
+}
+.footer{
+	border: 1px solid black;
+	width:96%;
+	height: 50px;
+	float: right;
+	background-color: black;
+}
+.footer h1{
+	font-size: 25px;
+	color: white;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 10px;
+}
