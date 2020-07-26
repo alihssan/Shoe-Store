@@ -1,5 +1,5 @@
 import loafer from '../Components/Sidebar/loafer.jpg'
-import sport from '../Components/Sidebar/nike.jpg'
+import sport from '../Components/Sidebar/spor.jpeg'
 import toes from '../Components/Sidebar/niketoes.jpg'
 
 export const data=[{
@@ -10,16 +10,16 @@ export const data=[{
 	"container":[
 		{
 			"title":"Nike Sports Shoes",
-			"Description":"lorem ipsum shoes from loremipsum store",
+			"Description":"Nike Sport Shoes For Sports Players",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 			"keywords":["nike","sports"],
 		},
 		{
 			"title":"Addidas Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["addidas","sports"],
 		},
@@ -27,7 +27,7 @@ export const data=[{
 			"title":"Loafer Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/loafer.jpg",
+			"image":loafer,
 
 			"keywords":["loafer","casual"],
 		},
@@ -35,7 +35,7 @@ export const data=[{
 			"title":"Nike Sports Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["nike","sports"],
 		},
@@ -43,7 +43,7 @@ export const data=[{
 			"title":"Nike Sports Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["nike","sports"],
 		},
@@ -51,7 +51,7 @@ export const data=[{
 			"title":"Nike Sports Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["nike","sports"],
 		}
@@ -70,7 +70,7 @@ export const data=[{
 			"title":"Nike Sports Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["nike","sports"],
 		},
@@ -78,7 +78,7 @@ export const data=[{
 			"title":"Addidas Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["addidas","sports"],
 		},
@@ -86,7 +86,7 @@ export const data=[{
 			"title":"Loafer Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":loafer,
 
 			"keywords":["loafer","casual"],
 		},
@@ -94,7 +94,7 @@ export const data=[{
 			"title":"Nike Sports Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["nike","sports"],
 		},
@@ -102,7 +102,7 @@ export const data=[{
 			"title":"Nike Sports Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["nike","sports"],
 		},
@@ -110,7 +110,7 @@ export const data=[{
 			"title":"Nike Sports Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["nike","sports"],
 		}
@@ -129,7 +129,7 @@ export const data=[{
 			"title":"Nike Sports Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["nike","sports"],
 		},
@@ -137,7 +137,7 @@ export const data=[{
 			"title":"Addidas Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["addidas","sports"],
 		},
@@ -145,7 +145,7 @@ export const data=[{
 			"title":"Loafer Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":loafer,
 
 			"keywords":["loafer","casual"],
 		},
@@ -153,7 +153,7 @@ export const data=[{
 			"title":"Nike Sports Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["nike","sports"],
 		},
@@ -161,7 +161,7 @@ export const data=[{
 			"title":"Nike Sports Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["nike","sports"],
 		},
@@ -169,7 +169,7 @@ export const data=[{
 			"title":"Nike Sports Shoes",
 			"Description":"lorem ipsum shoes from loremipsum store",
 			"pieces":"3",
-			"image":"../Components/Sidebar/nike.jpg",
+			"image":sport,
 
 			"keywords":["nike","sports"],
 		}

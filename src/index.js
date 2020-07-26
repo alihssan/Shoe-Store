@@ -5,12 +5,20 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css';
+import {configureStore} from '@reduxjs/toolkit'
+import {Provider} from 'react-redux'
+import rootreducer from './Reducer/RootReducer.js'
 
+const store = configureStore({
+	reducer: rootreducer,
+})
 ReactDOM.render(
   <React.StrictMode>
-  <Router>
-    <App />
-  </Router>
+  <Provider store={store}>
+  	<Router>
+    	<App />
+  	</Router>
+  </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
