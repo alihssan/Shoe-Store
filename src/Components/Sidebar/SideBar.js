@@ -7,13 +7,12 @@ import {FaMale} from 'react-icons/fa'
 import {FaFemale} from 'react-icons/fa'
 import {FaChild} from 'react-icons/fa'
 import {withRouter} from 'react-router-dom'
-
+import {connect} from 'react-redux'
 
 
 
 function SideBar(props){
-	const {location}=props
-	console.log(location)
+	const {location,value}=props
 	return(
 		<div className={Styles.sidebar}>
 			<Link to="/">
@@ -26,7 +25,12 @@ function SideBar(props){
 					style={{backgroundColor: location.pathname==="/Cart" ? 'black' : "transparent"}}
 
 				>
+					<div className={Styles.count} >
+						<p>{value.length}</p>
+					</div>
 					<AiOutlineShoppingCart className={Styles.icon} size={45} color="white"/>
+				
+
 				</div>
 			</Link>
 			<Link to="/Mens">
@@ -58,4 +62,11 @@ function SideBar(props){
 		)
 
 }
-export default withRouter(SideBar)
+function mapStateToProps({addtoCart}){
+
+	return{
+		value:addtoCart
+
+	}
+}
+export default withRouter(connect(mapStateToProps)(SideBar))

@@ -7,21 +7,19 @@ const AddtoCart=createSlice({
 	reducers:{
 		addCart:{
 			reducer(state,action){
-				const {title,slug,Description}=action.payload
-				state.push({title,slug,Description})
+				const {title,Description}=action.payload
+				state.push({title,Description})
 			},
-			prepare({title,slug,Description}){
+			prepare({title,Description}){
 				return {
 					payload:{
 							 title,
-							 slug,
 							 Description }
 				}
 			}
 		}
 	}
 })
- 
-export const {addCart}=AddtoCart.actions
 
+export const {addCart}=AddtoCart.actions
 export default AddtoCart.reducer

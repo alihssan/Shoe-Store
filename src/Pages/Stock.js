@@ -9,11 +9,14 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import {addCart} from '../Features/AddtoCartSlice.js'
+import {useDispatch,connect} from 'react-redux'
 
 
-
-export default function Stock(props){
+function Stock(props){
 	const {title,Description,slug,products,container}=props.Data
+  const dispatch=useDispatch()
+  console.log(props.dataa)
 	const useStyles = makeStyles({
   root: {
     maxWidth: 360,
@@ -32,7 +35,7 @@ export default function Stock(props){
 			<h1>{title}</h1>
 			<div>
 			{container.map((dat)=>
-			 <Card className={classes.root}>
+			 <Card className={classes.root} key={dat.title}>
       			<CardActionArea>
         <CardMedia
           className={classes.media}
@@ -55,7 +58,9 @@ export default function Stock(props){
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="medium" color="grey" style={{fontSize:"12px",color:"grey",fontWeight:"600",float:"right",border:"0.1px solid grey",marginBottom:"20px",marginLeft:"5px"}}>
+        <Button size="medium" color="grey" style={{fontSize:"12px",color:"grey",fontWeight:"600",float:"right",border:"0.1px solid grey",marginBottom:"20px",marginLeft:"5px"}}
+        onClick={()=>dispatch(addCart(dat))}
+        >
           Add to Cart
         </Button>
         
@@ -71,3 +76,11 @@ export default function Stock(props){
 
 		)
 }
+function mapStateToProps(state){
+  const {addtoCart}=state;
+  return{
+  dataa:addtoCart,
+}
+
+}
+export default connect(mapStateToProps)(Stock)
