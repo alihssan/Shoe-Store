@@ -65,7 +65,7 @@ function SideBar(props){
 function mapStateToProps({addtoCart}){
 
 	return{
-		value:addtoCart
+		value:addtoCart.item
 
 	}
 }

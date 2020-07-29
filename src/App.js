@@ -16,8 +16,7 @@ function App(props) {
     dispatch(getalldata(data))
   },[])
   const totaldata=props.datt
-    console.log(totaldata)
-
+  console.log(totaldata)
   return (
     <div className="Ap">
       <SideBar/>

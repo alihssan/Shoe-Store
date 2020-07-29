@@ -11,12 +11,11 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {addCart} from '../Features/AddtoCartSlice.js'
 import {useDispatch,connect} from 'react-redux'
-
+import Fade from 'react-reveal/Fade'
 
 function Stock(props){
 	const {title,Description,slug,products,container}=props.Data
   const dispatch=useDispatch()
-  console.log(props.dataa)
 	const useStyles = makeStyles({
   root: {
     maxWidth: 360,
@@ -35,7 +34,9 @@ function Stock(props){
 			<h1>{title}</h1>
 			<div>
 			{container.map((dat)=>
-			 <Card className={classes.root} key={dat.title}>
+      <div style={{display:"inline-block"}}>
+      <Fade bottom>
+			 <Card className={classes.root} key={dat.slug}>
       			<CardActionArea>
         <CardMedia
           className={classes.media}
@@ -53,7 +54,7 @@ function Stock(props){
         	Price
         </Typography>
           <Typography style={{fontSize:"20px",color:"grey",fontWeight:"500",float:"right",fontWeight:"400"}}>
-        	3000Rs
+        	{`${dat.price}$`}
         </Typography>
         </CardContent>
       </CardActionArea>
@@ -67,6 +68,8 @@ function Stock(props){
         
       </CardActions>
     </Card>
+    </Fade>
+    </div>
   			)}
   			</div>
 			
