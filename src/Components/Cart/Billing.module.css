@@ -6,7 +6,7 @@
 
 }
 .product{
-	border:1px solid white;
+	border:1px solid black;
 	width:80%;
 	height:150px;
 	margin-left: 10%;
@@ -20,10 +20,11 @@
 	color:grey;
 	font-size: 20px;
 	float: left;
-	margin-left: 20px;
+	width:100%;
 }
 .title{
-	color:black;
+	color:grey;
+	width:100%;
 	font-size: 22px;
 	padding-top: 15px;
 	font-weight: 600;
@@ -46,9 +47,8 @@
 	height:100px;
 }
 .cart{
-	border: 1px solid white;
 	width:100%;
-	height:635px;
+	height:540px;
 	margin-left: 70px;
 	padding-top: 20px;
 	overflow-y:scroll;
@@ -57,4 +57,16 @@
 	color:white;
 	font-weight:400;
 	text-align: center;
+}
+.clear{
+	width: 95%;
+	height:40px;
+	background-color: red;
+	margin-left:19.5%;
+	border:1px solid transparent;
+	border-radius: 5px;
+	color:black;
+	font-weight: 500;
+	font-size: 17px;
+
 }

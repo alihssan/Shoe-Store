@@ -16,6 +16,7 @@ import Fade from 'react-reveal/Fade'
 function Stock(props){
 	const {title,Description,slug,products,container}=props.Data
   const dispatch=useDispatch()
+  console.log(props.dataa)
 	const useStyles = makeStyles({
   root: {
     maxWidth: 360,

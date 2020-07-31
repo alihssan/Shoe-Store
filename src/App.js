@@ -8,6 +8,7 @@ import Stock from './Pages/Stock.js'
 import {useDispatch,connect} from 'react-redux'
 import {data} from './Data/Data.js'
 import {getalldata} from './Features/GetAllData.js'
+import Footer from './Components/Footer/Footer.js'
 
 function App(props) {
   const dispatch=useDispatch()
@@ -22,13 +23,15 @@ function App(props) {
       <SideBar/>
       <Route exact path="/" component={Home}/>
       <Route exact path="/Cart" component={Cart}/>
+
       {totaldata!==undefined && totaldata.map(val=>
           <Route exact path={`/${val.slug}`} key={val.slug}>
             <Stock Data={val} />
           </Route>
           
           )}
-
+          
+      <Footer/>
     </div>
   );
 }

@@ -13,6 +13,7 @@ import {connect} from 'react-redux'
 
 function SideBar(props){
 	const {location,value}=props
+	console.log(value)
 	return(
 		<div className={Styles.sidebar}>
 			<Link to="/">

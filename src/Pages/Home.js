@@ -79,9 +79,7 @@ export default function Home(){
   				</Carousel>
 
 			</div>
-			<div className={Styles.footer}>
-				<h1>By Ali Hassan</h1>
-			</div>
+			
 		</div>
 		)
 

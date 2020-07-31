@@ -25,8 +25,31 @@ const AddtoCart=createSlice({
 				}
 			}
 		}
+		,
+		clearCart:state=> {
+			state.item.length=0
+			state.totalprice=0
+		},
+
+		removeItem:{
+			reducer(state,action){
+				const {slug}=action.payload
+				const item_remove=state.item.findIndex(data=>data.slug===slug)
+				state.totalprice-=state.item[item_remove].price
+				state.item=[
+					...state.item.slice(0,item_remove),
+					...state.item.slice(item_remove+1)
+				]
+			},
+			prepare({slug}){
+				return{
+					payload:{
+						slug
+					}
+				}
+			}
+		}
 	}
 })
-
-export const {addCart}=AddtoCart.actions
+export const {addCart,clearCart,removeItem}=AddtoCart.actions
 export default AddtoCart.reducer

@@ -1,6 +1,5 @@
 .home{
 	width:94.67%;
-	height: 639px;
 	float: right;
 	background-color: black;
 	border:1px solid black;
@@ -42,17 +41,9 @@
 	margin-left: 25px;
 	font-family: oxygen;
 }
-.footer{
-	border: 1px solid black;
-	width:96%;
-	height: 50px;
-	float: right;
-	background-color: black;
-}
-.footer h1{
-	font-size: 25px;
-	color: white;
-	font-weight: 400;
-	text-align: center;
-	margin-top: 40px;
+@media (max-width: 600px){
+	.home{
+		height: 700px;
+
+	}
 }
