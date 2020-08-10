@@ -4,6 +4,7 @@
 	background-color: black;
 	border:1px solid black;
 	margin-top: 30px;
+	height: 610px;
 }
 .home h1{
 	font-size: 45px;
@@ -43,7 +44,27 @@
 }
 @media (max-width: 600px){
 	.home{
-		height: 700px;
+		height: 650px;
+
+
+	}
+	.home h1{
+		font-size: 30px;
+		text-align: center;
+		margin-right: 15px;
+	}
+	.disc{
+		display: none;
+	}
+	.info h1{
+		font-size: 40px;
+	}
+}
+@media (max-width: 450px){
+	.img{
+		float:left;
+		margin-left: -20px;
+		width: 95%;
 
 	}
 }

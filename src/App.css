@@ -1,9 +1,17 @@
 .Ap{
   background-color: black;
   margin:0px;
-  height:675px;
+  height:640px;
 
 }
 *{
 	margin:0px;
+}
+
+@media (max-width: 600px){
+	.Ap{
+		 height:750px;
+
+
+}
 }
