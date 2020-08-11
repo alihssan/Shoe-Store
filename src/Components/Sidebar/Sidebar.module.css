@@ -102,3 +102,11 @@
 
 	}
 }
+@media (max-width: 390px){
+	.nav{
+	margin-left: 1%;
+	margin-top: 9px;
+
+}
+
+}

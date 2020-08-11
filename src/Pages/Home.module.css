@@ -42,6 +42,11 @@
 	margin-left: 25px;
 	font-family: oxygen;
 }
+@media (max-width: 700px){
+	.disc{
+		display: none;
+	}
+}
 @media (max-width: 600px){
 	.home{
 		height: 650px;

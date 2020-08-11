@@ -20,9 +20,9 @@ function Stock(props){
 	const useStyles = makeStyles({
   root: {
     maxWidth: 360,
-    minWidth: 350,
+    minWidth: 300,
     display:"inline-block",
-    marginLeft:"50px",
+    marginLeft:"40px",
     marginTop:"20px",
   },
   media: {
