@@ -25,7 +25,7 @@ function Billing(props){
 
 								</div>
 						</div>
-						<button style={{backgroundColor:"black",border:"0.1px solid black", width:"40px",float:"right",marginTop:"-100px",marginLeft:"10px"}} onClick={()=>dispatch(removeItem(data))}>
+						<button style={{border:"1px solid green" ,backgroundColor:"black",border:"0.1px solid black", width:"40px",float:"right",marginTop:"-100px",marginLeft:"10px"}} onClick={()=>dispatch(removeItem(data))}>
 							<GiCancel size={25} color="white" style={{marginLeft:"-7px"}}/>
 						</button>
 					</div>

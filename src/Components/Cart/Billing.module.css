@@ -70,3 +70,31 @@
 	font-size: 17px;
 
 }
+@media (max-width: 600px){
+	.page{
+		width: 100%;
+	}
+	.product{
+		margin-left: 3%;
+		width:61%;
+		height: 100px;
+	}
+	.title{
+		font-size: 16px;
+	}
+	.price{
+		font-size: 18px;
+	}
+	.clear{
+		margin-left: 12%;
+		width:76%;
+	}
+	.cart{
+		margin-left:5%;
+		width:90%;
+	}
+	.cart h1{
+		float:left;
+		font-family: oxygen;
+	}
+}

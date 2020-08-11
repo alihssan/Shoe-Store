@@ -4,6 +4,7 @@
 	float: right;
 	margin-top: 40px;
 	background-color: black;
+	padding-left: 5%;
 
 }
 .container h1{
@@ -14,10 +15,12 @@
 	font-weight: 500;
 	font-family: oxygen;
 }
+
 @media (max-width: 600px){
 	.container{
 		width: 100%;
 		height: 3000px;
+		padding-left: 0px;
 
 
 	}
